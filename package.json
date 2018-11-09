@@ -1,0 +1,17 @@
+{
+  "name": "time-to-work",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Lianker Lopes <lianker.dev@gmail.com> (https://github.com/lianker)",
+  "license": "MIT",
+
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint src/*.js",
+    "prepush": "npm run lint"
+  },
+
+  "devDependencies": {
+    "eslint": "^5.8.0"
+  }
+
+}
