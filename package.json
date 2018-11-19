@@ -9,11 +9,12 @@
     "prepush": "npm run lint && npm run test:coverage",
     "precommit": "pretty-quick --staged",
     "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register",
-    "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register --watch"
+    "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register --watch",
+    "test:coverage": "nyc npm test"
   },
   "nyc": {
-    "functions": 80,
-    "lines": 80,
+    "functions": 5,
+    "lines": 5,
     "check-coverage": true,
     "reporter": [
       "text",
@@ -24,6 +25,7 @@
     ]
   },
   "devDependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0",
     "eslint": "^5.9.0",

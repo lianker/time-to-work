@@ -1,10 +1,7 @@
 import { describe, it } from 'mocha';
 import { expect } from 'chai';
+import {} from '../src/main';
 
-import hello from '../src/main';
-
-describe('MAIN', () => {
-  it('should be equal "Hello World!"', () => {
-    expect(hello()).to.equal('Hello World!');
-  });
+describe.only('MAIN', () => {
+  it('should be equal "Hello World!"', () => {});
 });
